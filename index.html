@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viagem dos Sonhos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Pacotes</a> </li>
+                <li><a href="#">Taxas</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+        <h1>Venha realizar a viagem dos seus sonhos</h1>
+    </header>
+    <section id="pacotes">
+        <h2>Conheça nossos pacotes</h2>
+        <p id="p1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, neque doloremque, impedit laborum et rerum unde ullam sed quasi amet porro quas? Ex recusandae, voluptas odio itaque nam iure. Voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est corporis error optio mollitia ab eligendi? Molestias est laudantium quibusdam illo distinctio iure hic saepe eius? Non dolorum nam aliquam alias.</p>
+        <br>
+        <a href="https://br.lipsum.com/feed/html"></a>
+        <hr>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, illo iste reprehenderit dicta temporibus labore repudiandae nulla eius placeat porro illum voluptate repellendus vitae laborum quisquam quam deserunt nobis saepe! Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem molestiae facere atque porro. Beatae assumenda, temporibus debitis laborum modi quis voluptates, dicta quidem voluptas facilis velit, tempore officia iure consequatur?</p>
+        </p>
+        <div class="figuras">
+            <figure>
+            <img src="img/gramado.jpeg" alt="gramado">
+            <figcaption>Gramado</figcaption></figure>
+            <figure>
+                <img src="img/porto.jpg" alt="porto">
+                <figcaption>Porto Seguro</figcaption>
+            </figure>
+            <figure>
+            <img src="img/rio-de-janeiro.jpg" alt="rio">
+            <figcaption>Rio de Janeiro</figcaption>
+            </figure>
+        </div>
+    </section>
+    <section>
+        <h2>Taxas e Serviço</h2>
+        <p>Veja nossas taxas para serviços</p>
+        <table border>
+            <caption>Descrição dos serviços e dos respectivos valores</caption>
+            <thead>
+                <tr>
+                    <th>
+                        Serviços
+                    </th>
+                    <th>
+                        Valor
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        Reserva de Hotel
+                    </td>
+                    <td>
+                        R$150,00
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Compra de Passagem
+                    </td>
+                    <td>
+                        R$100,00
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Aluguel de Carros
+                    </td>
+                    <td>
+                     R$50,00
+                    </td>
+             </tr>
+            </tbody>
+        </table>
+    </section>
+    <section>
+        <h2>
+            Contato
+        </h2>
+
+        <form method="get" action="#">
+            <fieldset>
+                <legend>Dados da Viagem</legend>
+                <label for="inome">Nome</label><br>
+                <input type="text" name="inome"> <br><br>
+                <label for="iemail">E-mail</label><br>
+                <input type="email" name="email" id="iemail"><br><br>
+                <label for="idata">Data de Ida</label><br>
+                <input type="date" name="data" id="idata"> <br><br>
+                <label for="idata">Data de Volta</label> <br>
+                <input type="date" name="data" id="idata"> <br><br>
+                <label for="ipes">Quantidade de Pessoas</label> <br>
+                <input type="number" name="quantidade" id="ipes"> <br><br>
+            </fieldset>
+
+            <fieldset>
+            <legend>Quais serviços deseja contratar?</legend>
+            <input type="checkbox" name="servi" id="iserv" value="Passagem">Compra de Passagens <br>
+            <input type="checkbox" name="hosp" id="hospedagem" value="hospedagem">Reserva de hospedagem <br>
+            <input type="checkbox" name="aluguel" id="Alguel" value="alguel"> Aluguel de veículos <br>
+            </fieldset>
+            <fieldset>
+                <legend>Escolha a forma de pagamento?</legend>
+
+                <label>
+                    <br> <input type="radio" name="formaPagamento" id="Cartão de Crédito"> Cartão de Crédito
+                </label>
+                <label>
+                    <br> <input type="radio" name="formaPagamento" id="Cartão de Débito"> Cartão de Débito
+                </label>
+
+                <label>
+                    <br> <input type="radio" name="formaPagamento" id="Pix"> Pix
+                </label>
+
+            </fieldset>
+            
+            <fieldset>
+                <legend>Escolha o prazo para o pagamento</legend>
+                <select name="prazoPagamento">
+                    <option value="aVista"> À Vista</option>
+                    <option value="5x" selected>5x sem juros</option>
+                    <option value="10x">10x com juros</option>
+                </select>
+            </fieldset>
+
+
+            <label for="icom">Comentário</label> <br>
+            <textarea rows="5"></textarea> <br><br>
+            <button>Salvar</button>
+        </form>
+    </section>
+    <footer>
+        <p>Desenvolvido por Sarah Luisa Kreuz Santin</p>
+    </footer>
+</body>
+</html>
